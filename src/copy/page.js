@@ -14,7 +14,6 @@ import {
     ModalHeader, 
     useDisclosure 
 } from "@heroui/react"
-import { ModalComponent } from "@/components/Modal"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -134,23 +133,21 @@ export default function Home() {
                 // className="w-full min-h-screen"
             >
                 <main>
-                    {/* <section className="flex flex-col items-center justify-center w-full h-screen">
+                    <section className="flex flex-col items-center justify-center w-full h-screen">
                         <h1>Contacto hero</h1>
                         <Button
                             className="mt-4 border-2 border-white py-4 px-2 rounded-xl"
                             onPress={onOpen}
                         >
                             Empezar con el formulario
-                        </Button> */}
-                        
+                        </Button>
                         {/* <button 
                             // onClick={handleShowForm}
                         >
                             Empezar con el formulario
                         </button> */}
-                    {/* </section> */}
-                    <ModalComponent />
-                    {/* <Modal
+                    </section>
+                    <Modal
                         // className={{
                         //     content: "w-[95%] h-[200vh] bg-white text-black",
                         //     header: "flex flex-col gap-1",
@@ -217,8 +214,7 @@ export default function Home() {
                                 </>
                             )}
                         </ModalContent>
-                    </Modal> */}
-                    
+                    </Modal>
                 </main>
                 <footer>
                     <ol>
