@@ -220,7 +220,7 @@ export default function Home() {
                     </Modal> */}
                     
                 </main>
-                <footer>
+                <footer className="text-black">
                     <ol>
                         <li>Facebook</li>
                         <li>Instagram</li>

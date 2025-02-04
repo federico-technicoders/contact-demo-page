@@ -22,11 +22,10 @@ export function ModalComponent() {
   // const {moveProps} = useDraggable({targetRef, canOverflow: true, isDisabled: !isOpen});
 
   return (
-    <section className="flex flex-col justify-center items-center w-full h-screen">
+    <section className="flex flex-col justify-center items-center w-full h-screen bg-black">
       <Button 
         onPress={onOpen}
-        color="default"
-        className="text-black"
+        color="gradient"
       > 
         Open Modal
       </Button>
@@ -64,15 +63,13 @@ export function ModalComponent() {
         //   },
         // }}
         motionProps={{
-          initial: { y: '100vh', opacity: 0 },
-          animate: { y:'0vh', opacity: 1, transition: { duration: 0.3, ease: "easeIn" } },
-          exit: { y: '100vh', opacity: 0, transition: { duration: 0.2, ease: "easeIn" } },
+          initial: { y: '100%', opacity: 0 },
+          animate: { y: '25%', opacity: 1, transition: { duration: 0.3, ease: "easeIn" } },
+          exit: { y: '100%', opacity: 0, transition: { duration: 0.2, ease: "easeIn" } },
         }}
         className="bg-white rounded-2xl text-black"
       >
-        <ModalContent
-          className=""
-        >
+        <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader 
@@ -82,7 +79,7 @@ export function ModalComponent() {
                 Formulario de contacto
               </ModalHeader>
               <ModalBody>
-                <p >
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
                   risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
                   quam.
